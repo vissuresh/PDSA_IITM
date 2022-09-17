@@ -1,5 +1,16 @@
-'''Create a Triangle class that accepts three side-lengths of the triangle as a, b and c as parameters at the time of object creation. Class Triangle should have the following methods : • Is_valid () : Returns valid if triangle is valid otherwise returns Invalid. o A triangle is valid when the sum of its two side-length are greater than the third one. That means the triangle is valid if all three condition are satisfied : ▪a+b>c ▪a+c>b ■ b + c> a • Side_Classification() : - If the triangle is invalid then return Invalid. Otherwise, it returns the type of triangle according to the sides of the triangle as follows : o Return Equilateral if all sides are of equal length. o Return Isosceles if any two sides are of equal length and third is different. o Return Scalene if all sides are of different lengths. Angle_Classification() : - If the triangle is invalid then return Invalid. Otherwise, return type of triangle using Pythagoras theorem. For example if a <= b <= c. then o If a² + b²>c² return Acute o If a² + b² = c² return Right o If a² + b² < c² return obtuse In the formula of angle classification, the square of the largest side length should be compared to the sum of squares of the other two side lengths. • Area() : - If the triangle is invalid then return Invalid. Otherwise, return the area of the triangle. o Area = √s(sa)(sb)(s - c)
-Where s = (a+b+c)/2 '''
+'''Create a Triangle class that accepts three side-lengths of the triangle as a, b and c as parameters at the time of object
+ creation. Class Triangle should have the following methods : • Is_valid () : Returns valid if triangle is valid otherwise
+  returns Invalid. o A triangle is valid when the sum of its two side-length are greater than the third one. That means the 
+  triangle is valid if all three condition are satisfied : ▪a+b>c ▪a+c>b ■ b + c> a • Side_Classification() : - If the 
+  triangle is invalid then return Invalid. Otherwise, it returns the type of triangle according to the sides of the triangle
+   as follows : o Return Equilateral if all sides are of equal length. o Return Isosceles if any two sides are of equal 
+   length and third is different. o Return Scalene if all sides are of different lengths. Angle_Classification() : - If the 
+   triangle is invalid then return Invalid. Otherwise, return type of triangle using Pythagoras theorem. For example if a <= 
+   b <= c. then o If a² + b²>c² return Acute o If a² + b² = c² return Right o If a² + b² < c² return obtuse In the formula 
+   of angle classification, the square of the largest side length should be compared to the sum of squares of the other two 
+   side lengths. • Area() : - If the triangle is invalid then return Invalid. Otherwise, return the area of the triangle. o 
+   Area = √s(sa)(sb)(s - c)
+    Where s = (a+b+c)/2 '''
 
 class Triangle:
     def __init__(self,a,b,c):
