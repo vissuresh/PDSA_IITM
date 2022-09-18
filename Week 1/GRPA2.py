@@ -14,5 +14,6 @@ def Goldbach(n):
         if(isprime(i) and isprime(n-i)):
           res.append((i,n-i))
     return res
+
 n=int(input())
 print(sorted(Goldbach(n)))
